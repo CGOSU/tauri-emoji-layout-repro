@@ -1,0 +1,113 @@
+/*
+ * Edit this file to retheme the whole application.
+ * Keep semantic roles stable and change only their values here.
+ */
+@theme {
+  --font-sans: "Inter Variable", "Noto Sans SC Variable", ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --font-display: "Oswald Variable", "Noto Sans SC Variable", "Inter Variable", sans-serif;
+  --font-mono: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+
+  /* Global type scale. Adjust these values to resize the whole interface. */
+  --text-xs: 0.75rem;
+  --text-sm: 0.875rem;
+  --text-base: 1rem;
+  --text-lg: 1.125rem;
+  --text-xl: 1.25rem;
+  --text-2xl: 1.5rem;
+  --text-3xl: 1.875rem;
+
+  --color-border: hsl(var(--border));
+  --color-input: hsl(var(--input));
+  --color-ring: hsl(var(--ring));
+  --color-background: hsl(var(--background));
+  --color-foreground: hsl(var(--foreground));
+  --color-primary: hsl(var(--primary));
+  --color-primary-foreground: hsl(var(--primary-foreground));
+  --color-coral: var(--theme-coral);
+  --color-secondary: hsl(var(--secondary));
+  --color-secondary-foreground: hsl(var(--secondary-foreground));
+  --color-destructive: hsl(var(--destructive));
+  --color-destructive-foreground: hsl(var(--destructive-foreground));
+  --color-success: hsl(var(--success));
+  --color-warning: hsl(var(--warning));
+  --color-muted: hsl(var(--muted));
+  --color-muted-foreground: hsl(var(--muted-foreground));
+  --color-accent: hsl(var(--accent));
+  --color-accent-foreground: hsl(var(--accent-foreground));
+  --color-popover: hsl(var(--popover));
+  --color-popover-foreground: hsl(var(--popover-foreground));
+  --color-card: hsl(var(--card));
+  --color-card-foreground: hsl(var(--card-foreground));
+
+  --radius-lg: var(--radius);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-sm: calc(var(--radius) - 4px);
+
+  --ease-out-quint: cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-in-out-quint: cubic-bezier(0.83, 0, 0.17, 1);
+  --duration-250: 250ms;
+  --duration-400: 400ms;
+
+  --shadow-xs: 0 1px 2px rgb(16 24 40 / 0.04);
+  --shadow-soft: 0 1px 2px rgb(16 24 40 / 0.04);
+  --shadow-pop: 0 2px 8px rgb(16 24 40 / 0.05);
+  --shadow-focus-ring: 0 0 0 3px hsl(var(--ring) / 0.35);
+
+  --animate-fade-in: fade-in 0.2s ease-out both;
+  --animate-fade-in-up: fade-in-up 0.35s cubic-bezier(0.22, 1, 0.36, 1) both;
+  --animate-scale-in: scale-in 0.18s cubic-bezier(0.22, 1, 0.36, 1) both;
+  --animate-slide-down: slide-down 0.25s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+:root {
+  /* Core semantic colors. Change these values to retheme the application. */
+  --background: 220 23.0769% 97.451%;
+  --foreground: 220.7143 37.8378% 14.5098%;
+  --card: 0 0% 100%;
+  --card-foreground: 220.7143 37.8378% 14.5098%;
+  --popover: 0 0% 100%;
+  --popover-foreground: 220.7143 37.8378% 14.5098%;
+  --primary: 32.7273 100% 54.7059%;
+  --primary-foreground: 0 0% 100%;
+  --secondary: 216 23.8095% 95.8824%;
+  --secondary-foreground: 217.5 23.5294% 26.6667%;
+  --muted: 216 23.8095% 95.8824%;
+  --muted-foreground: 220.6452 13.1915% 46.0784%;
+  --accent: 216 23.8095% 95.8824%;
+  --accent-foreground: 217.5 23.5294% 26.6667%;
+  --destructive: 4.2162 74.1036% 48.4314%;
+  --destructive-foreground: 0 0% 100%;
+  --success: 154.7619 64.9485% 38.0392%;
+  --warning: 37.3206 91.2664% 55.098%;
+  --border: 217.5 17.3913% 90.9804%;
+  --input: 216.9231 16.0494% 84.1176%;
+  --ring: 32.7273 100% 54.7059%;
+  --radius: 0.75rem;
+
+  /* Global visual surfaces. Components should consume these semantic tokens. */
+  --theme-app-background: #F7F8FA;
+  --theme-app-background-image: none;
+  --theme-shell-highlight: none;
+  --theme-sidebar: #FAFBFC;
+  --theme-divider: #EAECF0;
+  --theme-subtle: #F9FAFB;
+  --theme-text-tertiary: #98A2B3;
+  --theme-brand-hover: #E97D0C;
+  --theme-brand-pressed: #D97008;
+  --theme-brand-soft: #FFF4E5;
+  --theme-brand-subtle: #FFF8EF;
+  --theme-success-soft: #EAF8F2;
+  --theme-success-subtle: #F0FAF5;
+  --theme-error-soft: #FEECEB;
+  --theme-coral: #FF9418;
+  --theme-coral-foreground: #ffffff;
+  --theme-coral-shadow: var(--shadow-xs);
+  --theme-coral-halo: none;
+  --theme-card-border: hsl(var(--border));
+  --theme-card-background: #FFFFFF;
+  --theme-card-shadow: var(--shadow-xs);
+  --theme-glass-border: hsl(var(--border));
+  --theme-glass-background: #FFFFFF;
+  --theme-glass-shadow: none;
+  --theme-panel-radius: 0.875rem;
+}

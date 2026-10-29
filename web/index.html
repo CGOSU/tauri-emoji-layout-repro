@@ -1,0 +1,15 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Emoji Layout Lab</title><link rel="stylesheet" href="style.css"><script defer src="lab.js"></script></head>
+<body><main>
+<header><small>WEBKIT PERFORMANCE EXERCISE</small><h1>字符与布局实验室</h1><p>切换地区，观察点击处理结束到下一帧之间发生了什么。</p></header>
+<section class="controls" aria-label="实验设置">
+<label>字符模式<select id="mode"><option value="raw">A · 原始 emoji</option><option value="hidden">B · 隐藏 emoji</option><option value="guard">C · 边界保护</option><option value="ascii">D · ASCII 对照</option></select></label>
+<label>每组卡片<select id="count"><option value="12">12 · 接近实际界面</option><option value="60">60 · 扩大样本</option><option value="240">240 · 压力样本</option></select></label>
+<label>字体<select id="font"><option value="custom">本地 Inter / Oswald + 系统回退</option><option value="system">系统字体</option><option value="emoji">emoji 指定 Apple Color Emoji</option></select></label>
+<label class="check"><input type="checkbox" id="force">更新后同步读取几何</label>
+<button id="tour">依次首访全部地区</button><button id="reload">重新加载页面</button><button id="export">导出计时 JSON</button>
+</section>
+<p class="hint">首访和重复访问分别记录。页面刷新不等同新 WebContent 进程；严谨对照请退出应用后重开。此例能否明显变慢取决于系统与 WebKit 版本。</p>
+<section class="workspace"><nav id="regions" aria-label="地区"></nav><section class="content"><h2 id="heading">选择一个地区开始</h2><p id="status" role="status">尚未切换</p><div id="cards" class="grid"></div></section></section>
+<section class="results"><h2>本轮记录</h2><div class="table-wrap"><table><thead><tr><th>地区 / 访问</th><th>模式</th><th>DOM 更新</th><th>几何读取</th><th>首个 rAF</th><th>第二个 rAF</th></tr></thead><tbody id="results"></tbody></table></div><p>DOM 更新计时不包含全部浏览器布局；rAF 时间是回调到达时间，不是屏幕呈现完成时间。Console 同时输出 <code>[emoji-lab]</code> 和 Performance 标记。</p></section>
+</main></body></html>

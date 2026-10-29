@@ -1,0 +1,21 @@
+[package]
+name = "emoji-layout-lab"
+version = "0.1.0"
+edition = "2024"
+rust-version = "1.90"
+description = "Local emoji layout debugging exercise"
+
+[workspace]
+
+[build-dependencies]
+tauri-build = { version = "2", features = [] }
+
+[dependencies]
+tauri = { version = "=2.12.5", features = ["devtools"] }
+
+[lints.rust]
+unsafe_code = "warn"
+
+[lints.clippy]
+all = "warn"
+pedantic = "warn"

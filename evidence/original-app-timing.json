@@ -1,0 +1,187 @@
+{
+  "source": "Original Clash Forward Rev application; NOT measurements of this standalone repository",
+  "date": "2026-10-29",
+  "os": "macOS 27.2 (26B123)",
+  "webkit": "22625.2.8.11.9",
+  "method": {
+    "session": "New app/WebContent process for each run",
+    "viewport": [
+      1280,
+      486
+    ],
+    "view": "card",
+    "groups": 7,
+    "initialGroupIndex": 2,
+    "groupOrder": [
+      0,
+      1,
+      3,
+      4,
+      5,
+      6
+    ],
+    "nodeCounts": [
+      5,
+      1,
+      9,
+      12,
+      12,
+      1
+    ],
+    "visibility": "visible",
+    "documentHasFocus": false,
+    "interaction": "DOM button.click via Web Inspector console",
+    "startDelayMs": 5000,
+    "configSettleMs": 800,
+    "betweenGroupsMs": 400,
+    "observerInterference": "No UI/AX snapshots during scheduled group switching",
+    "timing": "twoFramesMs is the application's two requestAnimationFrame callbacks, not presentation completion",
+    "prewarmed": "Default group and region navigation may already be warmed by retained configuration page"
+  },
+  "runs": [
+    {
+      "variant": "original",
+      "valid": true,
+      "commitMs": [
+        8,
+        4,
+        8,
+        9,
+        8,
+        5
+      ],
+      "twoFramesMs": [
+        1190,
+        198,
+        498,
+        623,
+        623,
+        624
+      ],
+      "firstRAF": [
+        1179,
+        190,
+        487,
+        612,
+        609,
+        613
+      ],
+      "rowsMeasured": [
+        1,
+        1,
+        2,
+        3,
+        3,
+        1
+      ]
+    },
+    {
+      "variant": "original-return",
+      "valid": true,
+      "commitMs": [
+        12,
+        4,
+        8,
+        10,
+        11,
+        3
+      ],
+      "twoFramesMs": [
+        1203,
+        206,
+        481,
+        624,
+        624,
+        624
+      ],
+      "firstRAF": [
+        1189,
+        192,
+        474,
+        611,
+        612,
+        611
+      ],
+      "rowsMeasured": [
+        1,
+        1,
+        2,
+        3,
+        3,
+        1
+      ]
+    },
+    {
+      "variant": "noemoji",
+      "valid": true,
+      "commitMs": [
+        11,
+        3,
+        6,
+        10,
+        9,
+        5
+      ],
+      "twoFramesMs": [
+        37,
+        31,
+        31,
+        41,
+        40,
+        31
+      ],
+      "firstRAF": [
+        20,
+        8,
+        13,
+        19,
+        19,
+        12
+      ],
+      "rowsMeasured": [
+        1,
+        1,
+        2,
+        3,
+        3,
+        1
+      ]
+    },
+    {
+      "variant": "installed-u2060",
+      "valid": true,
+      "commitMs": [
+        11,
+        4,
+        8,
+        10,
+        8,
+        5
+      ],
+      "twoFramesMs": [
+        52,
+        31,
+        48,
+        40,
+        40,
+        41
+      ],
+      "firstRAF": [
+        40,
+        16,
+        32,
+        28,
+        27,
+        29
+      ],
+      "rowsMeasured": [
+        1,
+        1,
+        2,
+        3,
+        3,
+        1
+      ]
+    }
+  ]
+}

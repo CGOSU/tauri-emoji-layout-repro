@@ -1,0 +1,15 @@
+Original application: de-identified summary of WebContent native sampling
+Not a raw trace and not a sample from the standalone fixture.
+
+Representative hot path:
+  layout
+  glyphOverflowInInlineDirection
+  glyphDataForCharacter
+  CTFontCreateForCharactersWithLanguageAndOption
+  font character-set parsing (FillCharacterSet)
+
+Main-thread sampling window: 7428 samples total.
+6039 samples in system font fallback (~81.3%).
+5849 samples in font character-set parsing (~78.7%).
+These paths overlap; percentages must not be added.
+Sampling substantially increased latency and was used for attribution only.
